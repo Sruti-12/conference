@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* App.js styles */
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 4fr;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "side nav nav"
+    "side sec1 sec2";
+}
+
+.nav {
+  grid-area: nav;
+  /* background-color: #333; */
+}
+.side {
+  grid-area: side;
+  height: 100vh;
+  /* background-color: aqua; */
+}
+.sec1 {
+  grid-area: sec1;
+  /* background-color: #486b41; */
+}
+.sec2 {
+  grid-area: sec2;
+  /* background-color: #250705; */
+}
+
+/* Navbar.js Styles */
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  /* background-color: aliceblue;  */
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.navbar--name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.navbar--logout {
+}
+.navbar--logout--btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #1f6cd3;
+  background-color: #fff;
+  border: 1px solid #1f6cd3;
+  border-radius: 6px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.navbar--logout--btn:hover {
+  color: #ffff;
+  background-color: #1f6cd3;
+}
+
+/* Sidebar.js styles */
+.iconBar {
+  max-width: 110px;
+  background-color: #222222;
+  border-radius: 0 15px 15px 0;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.iconBar a {
+  color: white;
+  font-size: 25px;
+}
+
+/* Shared.js */
+.shared {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.shared--title {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.shared--text {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  padding-right: 20px;
+  cursor: pointer;
+  color: #939598;
+}
+.shared--toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+.shared--docs {
+  background-color: aliceblue;
+}
+.shared--no--docs {
+  color: #939598;
+  font-family: "Lato", sans-serif;
+  font-size: 0.75em;
+}
+.active{
+  color: #1f6cd3;
+}
+
+/* Myconf.js */
+.myconf {
+  height: 100%;
+  border-right: 1px solid #e0e0e0;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+}
+.myconf--title{
+  font-weight: 700;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+}
+
+/* ConfCard.js */
+.confcard {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  max-width: 650px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.confcard--image {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.confcard--details {
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.confcard--title {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.confcard--desc {
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.confcard--end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.confcard--date {
+  color: #1f6cd3;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding-right: 10px;
+}
